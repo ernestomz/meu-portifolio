@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<link rel="stylesheet" href="./estilos/index.css">
+
+<script src="./JS/script.js"></script>
+
+<script src="https://kit.fontawesome.com/d9f4eb338e.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <div class="menu-sublinhado">
+            <ul>
+                <li><a href="./atividade.html" title="Home" onclick="mudança()">Home</a></li>
+                <li><a href="" title="Contatos">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="row input-container">
+            <h1 class="title-contato">Fale Comigo</h1>
+
+            <form action="#" method="post">
+                <div class="style-form-input full">
+                    <input type="text" name="none" placeholder="Nome Completo" required/>
+                    <label><i class="fa-solid fa-user"></i>Nome</label>
+                </div>
+
+                <div class="style-form-input">
+                    <input type="text" name="email" placeholder="E-mail" required/>
+                    <label><i class="fa-solid fa-envelope"></i>E-mail</label>
+                </div>
+
+                <div class="style-form-input rigth">
+                    <input type="text" name="assunto" placeholder="Assunto" required/>
+                    <label><i class="fa-solid fa-bars"></i>Assunto</label>
+                </div>
+
+                <div class="style-form-input">
+                    <select name="sexo" id="sexos" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="style-form-input">
+                    <select name="ensino" id="escolaridade" required>
+                        <option value="fundamental">Ensino Fundamental</option>
+                        <option value="medio">Ensino Médio</option>
+                        <option value="superior">Ensino Superior</option>
+                        <option value="mestrado">Mestrado</option>
+                        <option value="doutorado">Doutorado</option>
+                    </select>
+                </div>
+
+                <div class="style-form-input full">
+                    <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+                    <label><i class="fa-solid fa-list"></i>Mensagem</label>
+                </div>
+
+                <div class="style-form-input full">
+                    <input type="hidden" name="acao" value="enviar">
+                    <button class="btn-submit" onclick="Enviado()">
+                        <a href="">Enviar</a>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
